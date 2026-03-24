@@ -2,12 +2,13 @@
 <html>
   <body>
     <h2>Test Login</h2>
-    <button onclick="go()">Login with Microsoft</button>
+
+    <button id="loginBtn">Login with Microsoft</button>
 
     <script>
-      function go() {
-        window.open("https://microsoft.com/devicelogin", "_blank");
-      }
+      document.getElementById("loginBtn").addEventListener("click", function() {
+        window.open("https://microsoft.com/devicelogin", "_blank", "noopener,noreferrer");
+      });
     </script>
   </body>
 </html>
